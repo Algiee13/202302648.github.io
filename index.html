@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,113 +16,112 @@ html
         body {
             font-family: Arial, sans-serif;
             min-height: 100vh;
+
             display: flex;
             justify-content: center;
             align-items: center;
 
-            background: linear-gradient(
-                135deg,
-                #fdf6f9,
-                #eee7f8
-            );
-
+            background: #f6f1f8;
             color: #333;
         }
 
         .container {
             width: 90%;
-            max-width: 800px;
+            max-width: 850px;
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 60px 55px;
-            border-radius: 25px;
+            background: #ffffff;
+            padding: 60px;
+            border-radius: 24px;
 
-            box-shadow:
-                0 10px 35px rgba(80, 60, 100, 0.08);
+            box-shadow: 0 15px 40px rgba(90, 70, 100, 0.10);
 
             text-align: center;
-
-            animation: fadeIn 1s ease;
         }
 
-        .hello {
-            font-size: 15px;
-            letter-spacing: 3px;
+        .tag {
+            display: inline-block;
+
+            padding: 8px 18px;
+            margin-bottom: 22px;
+
+            background: #f1e7f5;
+            color: #8a609e;
+
+            border-radius: 50px;
+
+            font-size: 13px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            color: #9a7bb5;
-            margin-bottom: 15px;
         }
 
         h1 {
             font-size: 48px;
             font-weight: 600;
-            letter-spacing: -1px;
-            margin-bottom: 15px;
-            color: #333;
+            margin-bottom: 12px;
+
+            color: #302936;
         }
 
-        .subtitle {
-            font-size: 18px;
+        .heart {
+            color: #a678b5;
+        }
+
+        .course {
+            font-size: 17px;
             color: #777;
             margin-bottom: 35px;
         }
 
         .line {
-            width: 50px;
-            height: 2px;
-            background: #c9addb;
-            margin: 0 auto 30px;
+            width: 45px;
+            height: 3px;
+
+            margin: 0 auto 35px;
+
+            background: #c6a4d3;
+            border-radius: 10px;
         }
 
         .about {
-            max-width: 650px;
-            margin: auto;
+            max-width: 680px;
+            margin: 0 auto;
         }
 
         .about p {
             font-size: 16px;
             line-height: 1.8;
             color: #666;
+
+            margin-bottom: 18px;
         }
 
         .highlight {
-            color: #8c68a5;
-            font-weight: 600;
+            color: #8a609e;
+            font-weight: bold;
         }
 
         footer {
-            margin-top: 30px;
+            margin-top: 35px;
+
             font-size: 13px;
-            color: #999;
+            color: #aaa;
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(15px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive Design */
+        /* Mobile Design */
         @media (max-width: 600px) {
 
             .card {
-                padding: 45px 25px;
+                padding: 40px 25px;
             }
 
             h1 {
-                font-size: 36px;
+                font-size: 35px;
             }
 
-            .subtitle {
-                font-size: 16px;
+            .course {
+                font-size: 15px;
             }
 
             .about p {
@@ -139,36 +137,40 @@ html
 
         <div class="card">
 
-            <div class="hello">
+            <div class="tag">
                 Hello, I'm
             </div>
 
-            <h1>Anji Wazowskie ♡</h1>
+            <h1>
+                Anji Wazowskie <span class="heart">♡</span>
+            </h1>
 
-            <div class="subtitle">
+            <p class="course">
                 Bachelor of Science in Information Technology
-            </div>
+            </p>
 
             <div class="line"></div>
 
             <div class="about">
+
                 <p>
-                    Design has always been more than just a skill for me—it is a
-                    creative outlet that allows me to communicate ideas through
-                    <span class="highlight">meaningful visuals</span>.
-                    I have a passion for graphic design and digital creativity,
-                    and I enjoy exploring different styles and ideas that inspire
-                    my work.
+                    Design has always been more than just a skill for me—
+                    it is a creative outlet that allows me to communicate
+                    ideas through <span class="highlight">meaningful visuals</span>.
                 </p>
 
-                <br>
+                <p>
+                    I have a passion for graphic design and digital creativity.
+                    I enjoy exploring different styles and ideas that continuously
+                    inspire my work.
+                </p>
 
                 <p>
                     Beyond academics, I enjoy creating DIY paper crafts,
-                    designing visual layouts, and experimenting with creative
-                    concepts that help me express my personality and continuously
-                    develop my creativity.
+                    designing visual layouts, and exploring creative concepts
+                    that help me express my personality and develop my creativity.
                 </p>
+
             </div>
 
             <footer>
