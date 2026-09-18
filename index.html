@@ -1,0 +1,183 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anji Wazowskie | Homepage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: linear-gradient(
+                135deg,
+                #fdf6f9,
+                #eee7f8
+            );
+
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 60px 55px;
+            border-radius: 25px;
+
+            box-shadow:
+                0 10px 35px rgba(80, 60, 100, 0.08);
+
+            text-align: center;
+
+            animation: fadeIn 1s ease;
+        }
+
+        .hello {
+            font-size: 15px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #9a7bb5;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 35px;
+        }
+
+        .line {
+            width: 50px;
+            height: 2px;
+            background: #c9addb;
+            margin: 0 auto 30px;
+        }
+
+        .about {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .about p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .highlight {
+            color: #8c68a5;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #999;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+
+            .card {
+                padding: 45px 25px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .about p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="hello">
+                Hello, I'm
+            </div>
+
+            <h1>Anji Wazowskie ♡</h1>
+
+            <div class="subtitle">
+                Bachelor of Science in Information Technology
+            </div>
+
+            <div class="line"></div>
+
+            <div class="about">
+                <p>
+                    Design has always been more than just a skill for me—it is a
+                    creative outlet that allows me to communicate ideas through
+                    <span class="highlight">meaningful visuals</span>.
+                    I have a passion for graphic design and digital creativity,
+                    and I enjoy exploring different styles and ideas that inspire
+                    my work.
+                </p>
+
+                <br>
+
+                <p>
+                    Beyond academics, I enjoy creating DIY paper crafts,
+                    designing visual layouts, and experimenting with creative
+                    concepts that help me express my personality and continuously
+                    develop my creativity.
+                </p>
+            </div>
+
+            <footer>
+                © 2026 Anji Wazowskie
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
